@@ -1,0 +1,310 @@
+.form__error {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    line-height: 1.2;
+    display: block;
+    padding: .5rem 1.5rem;
+    background-color: rgba(168, 61, 61, 1);
+    border-radius: 5px;
+    margin: .5rem 0;
+}
+
+.main {
+
+    .special_visitors {
+        padding: 8.0625rem 0 0;
+    }
+
+
+    .visitors {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        &__info {
+            order: 1;
+            text-align: center;
+            background-color: rgba(92, 61, 61, 0.2);
+            padding: 3.75rem;
+
+        }
+
+        &__title {
+            display: inline-block;
+            font-family: "Nerko One", cursive;
+            font-size: 1.83rem;
+            text-align: center;
+            margin: 0 auto 1.5rem;
+            border-bottom: 2px solid #D22828;
+            color: #5C3D3D;
+        }
+
+        &__text {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.3;
+            color: #5C3D3D;
+
+            & a {
+                font-style: italic;
+                color: #5C3D3D;
+            }
+        }
+
+        &__img_container {
+            order: 1;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    .tickets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        gap: 2rem;
+        padding: 3.75rem 7%;
+
+        &__title {
+            display: inline-block;
+            font-family: "Nerko One", cursive;
+            font-size: 1.83rem;
+            text-align: center;
+            border-bottom: 2px solid #D22828;
+            color: #5C3D3D;
+            margin-bottom: 1rem;
+        }
+
+        .details {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid #5C3D3D;
+            max-width: 16.25rem;
+
+            &__title {
+                display: block;
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: rgb(255, 255, 255);
+                width: 100%;
+                text-align: left;
+                padding: 1.25rem;
+                background-color: rgba(92, 61, 61, 0.75);
+            }
+
+            &__container {
+                padding: 1.25rem;
+                text-align: left;
+                color: #856D6D;
+            }
+
+            .detail {
+
+                &:not(:last-of-type) {
+                    margin-bottom: 2.5rem;
+                }
+
+
+                &__title {
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    margin-bottom: .7rem;
+                }
+
+                &__text {
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-size: 1.125rem;
+                    margin-bottom: .3rem;
+                }
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            text-align: left;
+            gap: 2rem;
+            width: 100%;
+
+            &__label {
+                display: block;
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 1.125rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #5C3D3D;
+                margin-bottom: .6rem;
+            }
+
+            &__special_label {
+                text-transform: initial;
+                margin-bottom: 0;
+            }
+
+            &__tags {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 1.25rem;
+                row-gap: .8rem;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            &__tag {
+                display: flex;
+                gap: .3rem;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            &__special_label {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 1.125rem;
+                color: #856D6D;
+            }
+
+            &__input {
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 1rem;
+                display: block;
+                border: 1px solid rgba(92, 61, 61, 0.5);
+                padding: .6rem 2rem;
+                color: #5C3D3D;
+                width: 100%;
+            }
+
+            &__special_input {
+                display: inline-block;
+                width: 5rem;
+                padding: .6rem 1rem;
+            }
+
+            &__price {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+
+                &:not(:last-of-type) {
+                    margin-bottom: .8rem;
+                }
+            }
+
+            &__price_text {
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 1.125rem;
+                font-weight: 700;
+                color: #A83D3D;
+            }
+
+            &__submit_container {
+                width: 100%;
+                text-align: center;
+            }
+
+            &__submit {
+                display: inline-block;
+                font-family: "Nerko One", cursive;
+                font-size: 1.125rem;
+                padding: 1rem 2rem;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                border: none;
+                background-color: #DB4F4F;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .special_tickets {
+        padding: calc(8.0625rem + 3.75rem) 7% 3.75rem;
+    }
+
+    .visitors_bcg {
+        .visitors__info {
+            background-color: rgba(168, 61, 61, 0.2);
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        .tickets {
+
+            .form {
+                flex-direction: row;
+                align-items: stretch;
+
+                &__field_container {
+                    width: calc(50% - 1rem);
+                }
+
+                &__special_field_container {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1050px) {
+        .visitors {
+            flex-direction: row;
+
+            &__img_container img {
+                width: 100%;
+            }
+
+            &__img_container, &__info {
+                flex: 1;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1300px) {
+        .tickets {
+            width: 70.625rem;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 3.75rem 0;
+
+            &__title_container {
+                width: 100%;
+            }
+
+            .form {
+                width: auto;
+                flex: 1;
+            }
+        }
+
+        .special_tickets {
+            padding: calc(8.0625rem + 3.75rem) 0 3.75rem;
+        }
+    }
+
+    @media screen and (min-width: 1800px) {
+        .visitors {
+            padding: 0 calc((100vw - 106.875rem) / 2);
+        }
+
+        .special_visitors {
+            padding: 8.0625rem calc((100vw - 106.875rem) / 2) 0;
+        }
+    }
+}

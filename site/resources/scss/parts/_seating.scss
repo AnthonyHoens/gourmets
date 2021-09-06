@@ -1,0 +1,61 @@
+.main {
+
+
+    &__container {
+        padding: 8.0625rem 7% 0;
+        background-color: rgba(225, 149, 149, 0.1);
+    }
+
+    .special_seating {
+        background: none;
+        padding: 3.75rem 0;
+
+
+        .exhibitors__list {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .exhibitors__search {
+            flex: 1;
+        }
+
+        .exhibitor {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width: 1100px) {
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .seating {
+                flex: 6;
+                width: auto;
+
+                &__img {
+                    width: auto;
+                }
+            }
+
+            .exhibitors {
+                flex: 4;
+                width: auto;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1500px) {
+        &__container {
+            padding: 8.0625rem calc((100vw - 88.75rem) / 2) 0;
+        }
+    }
+}
